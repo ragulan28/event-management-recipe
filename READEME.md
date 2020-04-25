@@ -2,6 +2,14 @@
 
 `docker-compose up`
 
+**Resourse server**
+
+run on http://localhost:8080/ <br>
+
+you can see the swagger <br>
+
+http://localhost:8080/swagger-ui.html <br>
+
 **Database view**
 
 Mysql workbench  run on http://localhost:8081/
