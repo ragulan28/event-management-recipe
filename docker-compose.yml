@@ -3,7 +3,7 @@ version: '3'
 services:
   event-management-database:
     image: mysql:8.0.2
-    restart: always
+#    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: event_password
       MYSQL_DATABASE: event_managment
@@ -11,19 +11,10 @@ services:
       - "3308:3306"
     networks:
       - backend
-#  auth-server:
-#    restart: always
-#    image: ragulan28/auth-server
-#    ports:
-#      - "8090:8080"
-#    depends_on:
-#      - jewlly-database
-#    networks:
-#      - backend
 
   event-management-recourse-server:
     restart: always
-    image: ragulan28/event-management-recourse-server
+    image: ragulan28/event-management-recourse-server:1.0.0
     ports:
       - "8080:8080"
     depends_on:
@@ -35,7 +26,7 @@ services:
     image: adminer
     ports:
       - 8081:8080
-    restart: always
+#    restart: always
     networks:
       - backend
       - frontend
