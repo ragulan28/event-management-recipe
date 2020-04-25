@@ -13,7 +13,7 @@ http://localhost:8080/swagger-ui.html <br>
 **Database view**
 
 Mysql workbench  run on http://localhost:8081/ <br>
-_Server_: event-management-database <br>
-_Username_: root <br>
-_Password_: event_password <br>
-_Password_: event_managment
+_Server_: `event-management-database` <br>
+_Username_: `root` <br>
+_Password_: `event_password` <br>
+_Password_: `event_managment`
